@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Rocket Elevators</title>
+		<meta name="description" content="" />
+		<meta name="Author" content="Dorin Grigoras [www.stepofweb.com]" />
+
+		<!-- mobile settings -->
+		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+		<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+
+		<!-- WEB FONTS : use %7C instead of | (pipe) -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700" rel="stylesheet" type="text/css" />
+
+		<!-- CORE CSS -->
+		<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+		<!-- REVOLUTION SLIDER -->
+		<link href="assets/plugins/slider.revolution/css/extralayers.css" rel="stylesheet" type="text/css" />
+		<link href="assets/plugins/slider.revolution/css/settings.css" rel="stylesheet" type="text/css" />
+
+		<!-- THEME CSS -->
+		<link href="assets/css/essentials.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
+
+		<!-- PAGE LEVEL SCRIPTS -->
+		<link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/color_scheme/yellow.css" rel="stylesheet" type="text/css" id="color_scheme" />
+	</head>
+
+	<!--
+		AVAILABLE BODY CLASSES:
+		
+		smoothscroll 			= create a browser smooth scroll
+		enable-animation		= enable WOW animations
+
+		bg-grey					= grey background
+		grain-grey				= grey grain background
+		grain-blue				= blue grain background
+		grain-green				= green grain background
+		grain-blue				= blue grain background
+		grain-orange			= orange grain background
+		grain-yellow			= yellow grain background
+		
+		boxed 					= boxed layout
+		pattern1 ... patern11	= pattern background
+		menu-vertical-hide		= hidden, open on click
+		
+		BACKGROUND IMAGE [together with .boxed class]
+		data-background="assets/images/_smarty/boxed_background/1.jpg"
+	-->
+	<body class="smoothscroll enable-animation">
+
+		
+
+
+		<!-- wrapper -->
+		<div id="wrapper">
+
+			<!-- 
+				AVAILABLE HEADER CLASSES
+
+				Default nav height: 96px
+				.header-md 		= 70px nav height
+				.header-sm 		= 60px nav height
+
+				.b-0 		= remove bottom border (only with transparent use)
+				.transparent	= transparent header
+				.translucent	= translucent header
+				.sticky			= sticky header
+				.static			= static header
+				.dark			= dark header
+				.bottom			= header on bottom
+				
+				shadow-before-1 = shadow 1 header top
+				shadow-after-1 	= shadow 1 header bottom
+				shadow-before-2 = shadow 2 header top
+				shadow-after-2 	= shadow 2 header bottom
+				shadow-before-3 = shadow 3 header top
+				shadow-after-3 	= shadow 3 header bottom
+
+				.clearfix		= required for mobile menu, do not remove!
+
+				Example Usage:  class="clearfix sticky header-sm transparent b-0"
+			-->
+			<div id="header" class="navbar-toggleable-md sticky header-md clearfix">
+
+				<!-- TOP NAV -->
+				<header id="topNav">
+					<div class="container">
+
+						<!-- Mobile Menu Button -->
+						<button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
+							<i class="fa fa-bars"></i>
+						</button>
+
+						<!-- Logo -->
+						<a class="logo float-left scrollTo" href="#top">
+							<img src="demo_files/images/thematics/construction/Logo.jpg" alt="" />
+						</a>
+
+						<!-- 
+							Top Nav 
+							
+							AVAILABLE CLASSES:
+							submenu-dark = dark sub menu
+						-->
+						<div class="navbar-collapse collapse float-right nav-main-collapse submenu-dark">
+							<nav class="nav-main">
+
+								<!-- 
+									.nav-onepage
+									Required for onepage navigation links
+									
+									Add .external for an external link!
+								-->
+								<ul id="topMain" class="nav nav-pills nav-main nav-onepage">
+									<li class="active"><!-- HOME -->
+										<a href="#home">
+											HOME
+										</a>
+									</li>
+									<li><!-- SERVICES -->
+										<a href="#services">
+											SERVICES
+										</a>
+									</li>
+									<li><!-- WORK -->
+										<a href="#work">
+											PORTFOLIO
+										</a>
+									</li>
+									<li><!-- NEWS -->
+										<a href="#news">
+											NEWS
+										</a>
+									</li>
+									
+									<li><!-- CLIENTS -->
+										<a href="#clients">
+											CLIENTS
+										</a>
+									</li>
+									
+									</li>
+									<li><!-- CONTACT -->
+										<a href="#contact">
+											CONTACT
+										</a>
+									</li>
+								</ul>
+
+							</nav>
+						</div>
+
+					</div>
+				</header>
+				<!-- /Top Nav -->
+
+            </div>
+            <section class="page-header page-header-xs">
+                <div class="container">
+            
+                    <h1>GET A QUOTE : </h1>
+            
+                </div>
+            </section>
+            
+            <section id="request-form" >
+                <div class="container" >
+                    <form action="/quote" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="kY8UzrgnLPTAjTqfUgMDJ4V3LzyX6dpx/vUFcM7Y/AcBEbMV/UG06m5Vzo9W1w9kTXu6waQhlUG1Bby2uxmQjQ==" />
+                        <!-- RANGE SELECTOR -->
+                        <div class="fancy-form fancy-form-select type-select" style="display: none;">
+                            <label for="Choose your elevator&#39;s model">Choose your elevator&#39;s model</label>
+                            <select class="form-control" name="range-type-select" id="range-type-select"><option value="--- select a range  ---">--- select a range  ---</option>
+            <option value="standard">standard</option>
+            <option value="premium">premium</option>
+            <option value="excelium">excelium</option></select>
+                        </div>
+            
+                        <!-- BUILDING-TYPE SELECTOR -->
+                        <div class="fancy-form fancy-form-select type-select" id="building-type-wrapper">
+                            <label for="What&#39;s your project type ">What&#39;s your project type ?</label>
+                            <select class="form-control" name="building-type-select" id="building-type-select"><option id="buildingType" value="--- select a building type ---">--- select a building type ---</option>
+            <option value="residential">residential</option>
+            <option value="commercial">commercial</option>
+            <option value="corporate">corporate</option>
+            <option value="hybrid">hybrid</option></select>
+                        </div>
+            
+                        <!-- RESIDENTIAL INPUTS-->
+                        <div id='residential-form' style="display: none;" >
+                            <div class="fancy-form fancy-form-select">
+                                <label for="how many appartments ">How many appartments ?</label>
+                                <input class="form-control residential-form" value="0" type="number" name="residential-appartments" id="residential-appartments" />
+                            </div>
+            
+                            <div class="fancy-form fancy-form-select">
+                                <label for="how many stories ">How many stories ?</label>
+                                <input class="form-control residential-form" value="0" type="number" name="residential-stories" id="residential-stories" />
+                            </div>
+            
+                            <div class="fancy-form fancy-form-select">
+                                <label for="How many basements ">How many basements ?</label>
+                                <input class="form-control residential-form" value="0" type="number" name="residential-basements" id="residential-basements" />
+                            </div>
+                        </div>
+            
+                        <!-- COMMERCIAL INPUTS-->
+                        <div id='commercial-form' style="display: none;">
+                            <div class="fancy-form">
+                                <label for="how many stories ">How many stories ?</label>
+                                <input class="form-control commercial-form" value="0" type="number" name="commercial-stories" id="commercial-stories" />
+                            </div>
+            
+                            <div class="fancy-form">
+                                <label for="how many basements ">How many basements ?</label>
+                                <input class="form-control commercial-form" value="0" type="number" name="commercial-basements" id="commercial-basements" />
+                            </div>
+            
+                            <div class="fancy-form">
+                                <label for="how many parking spaces ">How many parking spaces ?</label>
+                                <input class="form-control commercial-form" value="0" type="number" name="commercial-parking-spaces" id="commercial-parking-spaces" />
+                            </div>
+            
+                            <div class="fancy-form">
+                                <label for="How many elevator shafts ">How many elevator shafts ?</label>
+                                <input class="form-control commercial-form" value="0" type="number" name="commercial-elevator-shafts" id="commercial-elevator-shafts" />
+                            </div>
+                        </div>
+            
+                        <!-- CORPORATE INPUTS-->
+                        <div id='corporate-form' style="display: none;">
+                            <div class="fancy-form">
+                                <label for="how many stories ">How many stories ?</label>
+                                <input class="form-control corporate-form" value="0" type="number" name="corporate-stories" id="corporate-stories" />
+                            </div>
+            
+                            <div class="fancy-form">
+                                <label for="how many units ">How many units ?</label>
+                                <input class="form-control corporate-form" value="0" type="number" name="corporate-units" id="corporate-units" />
+                            </div>
+            
+                            <div class="fancy-form">
+                                <label for="how many basements ">How many basements ?</label>
+                                <input class="form-control corporate-form" value="0" type="number" name="corporate-basements" id="corporate-basements" />
+                            </div>
+            
+                            <div class="fancy-form">
+                                <label for="How many parking spaces ">How many parking spaces ?</label>
+                                <input class="form-control corporate-form" value="0" type="number" name="corporate-parking-spaces" id="corporate-parking-spaces" />
+                            </div>
+            
+                            <div class="fancy-form">
+                                <label for="How many maximum occupants per floor ">How many maximum occupants per floor ?</label>
+                                <input class="form-control corporate-form" value="0" type="number" name="corporate-max-occupants" id="corporate-max-occupants" />
+                            </div>
+                        </div>
+            
+                        <!-- HYBRID INPUTS-->
+                        <div id='hybrid-form' style="display: none;">
+                            <div class="fancy-form">
+                                <label for="how many stories ">How many stories ?</label>
+                                <input class="form-control hybrid-form" type="number" name="hybrid-stories" id="hybrid-stories" />
+                            </div>
+            
+                            <div class="fancy-form">
+                                <label for="how many units ">How many units ?</label>
+                                <input class="form-control hybrid-form" type="number" name="hybrid-units" id="hybrid-units" />
+                            </div>
+            
+                            <div class="fancy-form">
+                                <label for="how many basements ">How many basements ?</label>
+                                <input class="form-control hybrid-form" type="number" name="hybrid-basements" id="hybrid-basements" />
+                            </div>
+            
+                            <div class="fancy-form">
+                                <label for="How many parking spaces ">How many parking spaces ?</label>
+                                <input class="form-control hybrid-form" type="number" name="hybrid-parking-spaces" id="hybrid-parking-spaces" />
+                            </div>
+            
+                            <div class="fancy-form">
+                                <label for="How many maximum occupants per floor ">How many maximum occupants per floor ?</label>
+                                <input class="form-control hybrid-form" type="number" name="hybrid-max-occupants" id="hybrid-max-occupants" />
+                            </div>
+            
+                            <div class="fancy-form">
+                                <label for="How many working hours per day ">How many working hours per day ?</label>
+                                <input class="form-control hybrid-form" type="number" name="hybrid-hours" id="hybrid-hours" />
+                            </div>
+                        </div>
+                        <div  class="fancy-form" id="fancy-form1">
+                            <label > chose the quality of the elevator below : </label>
+                            <input  id = "standard"  type="radio" name="services" value="standard"   > Standard  <br>
+                            <input   id = "premium" type="radio" name="services" value="premium" > Premium <br>
+                            <input   id = "excelium" type="radio" name="services" value="excelium" > Excelium
+                          
+                            <label>Price of an elevator $:</label> <input id="PriceUnit" type ="text"  disabled>
+                            <label>Installation costs $:</label> <input id="InstallationCost" type ="text"  disabled>
+                        </div>
+                        <div id="contact-quote-form">
+                           <div class="fancy-form">
+                               <label for="Full Name">Full name</label>
+                               <input class="form-control residential-form" type="text" name="full_name" id="full_name" />
+                           </div>
+                           <div class="fancy-form">
+                               <label for="Company Name">Company name</label>
+                               <input class="form-control residential-form" type="text" name="business_name" id="business_name" />
+                           </div>
+                           <div class="fancy-form">
+                               <label for="Email">Email</label>
+                               <input class="form-control residential-form" type="text" name="email" id="email" />
+                           </div>
+                           <div class="fancy-form">
+                               <label for="Phone Number">Phone number</label>
+                               <input class="form-control residential-form" type="text" name="phone_number" id="phone_number" />
+                           </div>
+                           <div class="fancy-form">
+                               <label for="Project Name">Project name</label>
+                               <input class="form-control residential-form" type="text" name="building_project_name" id="building_project_name" />
+                           </div>
+                           <div class="fancy-form">
+                               <label for="Project Description">Project description</label>
+                               <input class="form-control residential-form" type="text" name="project_description" id="project_description" />
+                           </div>
+                           <div class="fancy-form">
+                               <label for="Message">Message</label>
+                               <input class="form-control residential-form" type="text" name="message" id="message" />
+                           </div>
+                           <div class="fancy-form">
+                               <label for="Department in Charge">Department in charge</label>
+                               <input class="form-control residential-form" type="text" name="departement_in_charge_of_elevators" id="departement_in_charge_of_elevators" />
+                           </div>
+                       </div>
+            
+                        <input type="submit" name="commit" value="Get A Quote Now!" class="" id="" data-disable-with="Get A Quote Now!" />
+                        <input type=""  id="submitquote"/>
+            </form>    </div>
+            </section>
+<!-- FOOTER -->
+<footer id="footer">
+    <div class="container">
+
+
+        <div class="row">
+
+            <!-- col #1 -->
+            <div class="col-md-8">
+
+                <h3 class="letter-spacing-1">CALL US?</h3>
+
+                <!-- Small Description -->
+                <p>
+                    We are at your service since 1976!
+                </p>
+                <h2>(418) 622-6644</h2>
+            </div>
+            <!-- /col #1 -->
+
+            <!--
+            <!- col #2 ->
+            <div class="col-md-4">
+                <h3 class="letter-spacing-1">KEEP IN TOUCH</h3>
+
+                <!- Newsletter Form ->
+                <p>Subscribe to Our Newsletter to get Important News & Offers</p>
+
+                <form class="validate" action="php/newsletter.php" method="post" data-success="Subscribed! Thank you!" data-toastr-position="bottom-right">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                        <input type="email" id="email" name="email" class="form-control required" placeholder="Enter your Email">
+                        <span class="input-group-btn">
+                            <button class="btn btn-success" type="submit">Subscribe</button>
+                        </span>
+                    </div>
+                </form>
+                <!- /Newsletter Form ->
+
+
+            </div>
+            <!- /col #2 ->
+            -->
+
+        </div>
+
+
+    </div>
+
+    <div class="copyright">
+        <div class="container">
+            <ul class="float-right m-0 list-inline mobile-block">
+                <li><a href="#">Terms &amp; Conditions</a></li>
+                <li>&bull;</li>
+                <li><a href="#">Privacy</a></li>
+            </ul>
+            &copy; All Rights Reserved, Company LTD
+        </div>
+    </div>
+
+</footer>
+<!-- /FOOTER -->
+
+</div>
+<!-- /wrapper -->
+
+
+<!-- SCROLL TO TOP -->
+<a href="#" id="toTop"></a>
+
+
+<!-- PRELOADER -->
+<div id="preloader">
+<div class="inner">
+    <span class="loader"></span>
+</div>
+</div><!-- /PRELOADER -->
+
+<!-- JAVASCRIPT FILES -->
+<script>var plugin_path = 'assets/plugins/';</script>
+<script src="assets/plugins/jquery/jquery-3.3.1.min.js"></script>
+
+<script src="assets/js/scripts.js"></script>
+
+<!-- STYLESWITCHER - REMOVE -->
+<script async src="demo_files/styleswitcher/styleswitcher.js"></script>
+
+<!-- REVOLUTION SLIDER -->
+<script src="assets/plugins/slider.revolution/js/jquery.themepunch.tools.min.js"></script>
+<script src="assets/plugins/slider.revolution/js/jquery.themepunch.revolution.min.js"></script>
+<script src="assets/js/view/demo.revolution_slider.js"></script>
+
+<!-- PAGELEVEL SCRIPTS -->
+<script src="assets/js/contact.js"></script>
+<script src="C:\genesisProjet\GenesisProgram-master\Smarty\HTML_BS4\assets\get_a_quote.js"></script>
+
+
+
+<!-- 
+GMAP.JS 
+http://hpneo.github.io/gmaps/
+-->
+<!-- <script src="//maps.google.com/maps/api/js?key=AIzaSyCqCn84CgZN6o1Xc3P4dM657HIxkX3jzPY"></script>
+<script src="assets/plugins/gmaps.js"></script>
+<script>
+
+jQuery(document).ready(function(){
+
+    /**
+        @BASIC GOOGLE MAP
+    **/
+    var map2 = new GMaps({
+        div: '#map2',
+        lat: -12.043333,
+        lng: -77.028333,
+        scrollwheel: false
+    });
+
+    var marker = map2.addMarker({
+        lat: -12.043333,
+        lng: -77.028333,
+        title: 'Company, Inc.'
+    });
+
+});
+
+</script> -->
+</body>
+</html>
