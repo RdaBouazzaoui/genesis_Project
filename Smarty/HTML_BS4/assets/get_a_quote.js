@@ -1,6 +1,8 @@
 
    $(function(){
     $("#building-type-select").change(function(){
+        $("#standard").checked=false;
+       
         var test = $("#building-type-select option:selected").text();
      if (test==="residential") {
                    $("#residential-form").css("display", "block");
