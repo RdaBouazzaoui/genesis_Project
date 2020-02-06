@@ -31,7 +31,7 @@
                      $("#hybrid-form").css("display", "none");
     }
     }); 
-    
+    // cell the fuction showPrice 
     $("#fancy-form1 :radio").change(function() {
         var prixInSt = 7565*0.10;
         var prixInPr = 12345*0.13;
@@ -51,7 +51,7 @@
     }
                       });
 
-  //show the price Unit & Installation
+  //function for show the price Unit & Installation
   var ShowPrice =function( PriceUnit,PriceInsCost){
      var type = $("#building-type-select option:selected").text();
      
@@ -194,12 +194,7 @@ hybridObject.prototype.NbCages = function(){
 
 
  };
- $("#submitquote").on("click",function(){
-     var test = new CommercialObject($("#commercial-stories").val(),$("#corporate-basements").val(),$("#commercial-parking-spaces").val(),$("#commercial-elevator-shafts").val(),$("#commercial-elevator-shafts").val());
-      var test1 = new residentialOpject($("#residential-appartments").val(),$("#residential-stories").val(),$("#residential-basements").val());
-      var x = test1.NbCages();
-       console.log(x);
- });
+
   
 
 
